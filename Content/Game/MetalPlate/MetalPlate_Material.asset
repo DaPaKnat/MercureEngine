@@ -1,0 +1,17 @@
+MATERIAL
+{
+    "AO": 1.0,
+    "AOMap": "Game/MetalPlate/MetalPlate_AO",
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "AlbedoMap": "Game/MetalPlate/MetalPlate_Albedo",
+    "Metallic": 1.0,
+    "MetallicMap": "Game/MetalPlate/MetalPlate_Metallic",
+    "NormalMap": "Game/MetalPlate/MetalPlate_Normal",
+    "Roughness": 1.0,
+    "RoughnessMap": "Game/MetalPlate/MetalPlate_Roughness"
+}

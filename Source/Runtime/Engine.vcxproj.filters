@@ -1,0 +1,1309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{ec1dc496-0149-4ff3-899e-c7973ebc8a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan">
+      <UniqueIdentifier>{5fb35853-edaa-47a3-9791-378583c2ef0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private">
+      <UniqueIdentifier>{6370f7c7-e25a-4ad1-9f6c-36110bfaf490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI">
+      <UniqueIdentifier>{ad631fe5-b9c3-44fc-9c83-77f0ef4fdce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Asset\Model">
+      <UniqueIdentifier>{71030d91-569e-4423-a29e-afd1e5c5a5fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Asset">
+      <UniqueIdentifier>{3d561404-ff4c-4569-9d1a-811aeb7d760e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Asset\Shader">
+      <UniqueIdentifier>{efd39a4d-9d3f-4e8f-a864-81c7a5f61695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Asset\Texture">
+      <UniqueIdentifier>{be718c66-3584-422d-be70-ff7f96539a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Asset\Material">
+      <UniqueIdentifier>{5c51131b-48da-4159-97a3-45ac5f9866f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Object">
+      <UniqueIdentifier>{c49df76a-7925-468c-bfb4-2d4837dfb825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\Utilities">
+      <UniqueIdentifier>{5a51942c-af22-4334-b2e7-2566dc47d50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Private\Vulkan\RenderPasses">
+      <UniqueIdentifier>{2606c0c1-e277-4be9-a4b5-24e0b9ae9f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private">
+      <UniqueIdentifier>{9e19b240-d0d1-4c31-98ff-0e9714bdcf56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2d415851-068e-4689-8a12-633c917dd415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private\Log">
+      <UniqueIdentifier>{ebceeaf2-c21b-429b-ab5c-a500bc129edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private\Delegate">
+      <UniqueIdentifier>{74763d45-e895-4c49-890d-31134f6ac655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private\Profiler">
+      <UniqueIdentifier>{41e8cdd8-2f11-468c-b9a8-95be7a0fc1e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Private\Mathematic">
+      <UniqueIdentifier>{d527601e-f597-4abc-a6ce-d47b756ce745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private">
+      <UniqueIdentifier>{bbb846d8-8584-4677-865f-71a750b9674f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{f28ddda2-211c-48c3-b144-26c55a211df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\Light">
+      <UniqueIdentifier>{00f11b52-95d9-4013-917b-e3347471bf2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\Camera">
+      <UniqueIdentifier>{050e8bb3-ab72-49c3-aaa0-b72c847828b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\Camera\CameraTypes">
+      <UniqueIdentifier>{89154384-4fd9-41e6-bbb3-26cbc45970bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\Components">
+      <UniqueIdentifier>{e09996eb-042d-47db-849a-4cd66c1d57c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\EngineTypes">
+      <UniqueIdentifier>{509df253-8f29-4c27-8504-b399f950648a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\PhysicsEngine">
+      <UniqueIdentifier>{53baa996-e5ae-4048-b81f-d73c65087a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Private\GameFramework">
+      <UniqueIdentifier>{89f89d74-88d0-4482-bf84-d98f2bb7444e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Private">
+      <UniqueIdentifier>{3730337b-51b7-4f2a-bebc-bb748c2ff377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{1a7cc951-9abd-40af-a2aa-d44ece7b0d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool\Private">
+      <UniqueIdentifier>{3f124827-bc4b-4624-940e-91f9a1630aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{bcb45460-61b2-4c09-903b-05157b2c1cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreObject\Private">
+      <UniqueIdentifier>{f8d04099-ee4c-4f59-82fa-5b6f1302ba8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreObject">
+      <UniqueIdentifier>{f7e98f4a-691d-41ae-8f86-273ece95e54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Private\GLFW">
+      <UniqueIdentifier>{ddafde85-df01-4272-9a51-14e466a3d0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Private">
+      <UniqueIdentifier>{01d2b9d8-31c4-4822-8556-5c8cb7bf0e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{94a6b84c-3bc1-4ee2-acb1-e5fa75a42114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Private\GLFW\Window">
+      <UniqueIdentifier>{3250fead-6dc1-4195-a61b-77f8f7e0c8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager\Private">
+      <UniqueIdentifier>{6cd81fca-c41b-492e-bac2-3bf728fa98a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager">
+      <UniqueIdentifier>{2b69188b-beb8-47eb-a67a-307b4f5a1963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager\Private\Builder">
+      <UniqueIdentifier>{f43ad673-b7e0-48c9-a301-a6b87a14418a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Private\Environment">
+      <UniqueIdentifier>{d7faebc5-0787-494f-b291-672ad0a645e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Private">
+      <UniqueIdentifier>{7b0538d4-8e81-4d04-8998-db96d0488392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{92885dfc-3753-4be4-b1c2-740aed11b065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Private\PlayerScripts">
+      <UniqueIdentifier>{be929501-9994-46db-9f42-2367c4ad3971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Public\PlayerScripts">
+      <UniqueIdentifier>{cbc0ac8b-3d5a-4ca1-a40c-6e537364d333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Public">
+      <UniqueIdentifier>{a4920207-f55f-4048-9e27-1c43a571799c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Private\Utility">
+      <UniqueIdentifier>{a84bfd86-3eb0-436b-9b57-7525b3a8146f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public">
+      <UniqueIdentifier>{ff111428-103e-4f19-929f-dbde8d6f3677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan">
+      <UniqueIdentifier>{3242a7cb-793a-430f-8692-8123e8b3920b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Asset\Model">
+      <UniqueIdentifier>{39e71bd5-fe25-442c-948a-8bf1e651420a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Asset">
+      <UniqueIdentifier>{3b6d5a77-8729-4eba-812f-67b8e7a290e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Asset\Shader">
+      <UniqueIdentifier>{e4a3bbaf-072a-4316-a387-3642bcdadd56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Asset\Texture">
+      <UniqueIdentifier>{c9d57da0-37ad-41c1-862c-98a3c8a95a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Asset\Material">
+      <UniqueIdentifier>{247e2822-4c39-4571-9025-7cafdae767fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Object">
+      <UniqueIdentifier>{a8a1f742-cba1-48a8-aa54-2601ae2ee8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\Utilities">
+      <UniqueIdentifier>{7f4db6fc-8203-4551-b786-2b95558b6a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RHI\Public\Vulkan\RenderPasses">
+      <UniqueIdentifier>{d991eeec-ad2d-449a-bf7f-3df5f1c39c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public">
+      <UniqueIdentifier>{b29986fc-b21a-4d07-8f1e-db2e047b2b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Log">
+      <UniqueIdentifier>{62dfa5bd-9daa-4b68-859b-da3a466d94c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\HAL">
+      <UniqueIdentifier>{bc3e28d1-51a4-418d-90de-a02dd13da7cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Windows">
+      <UniqueIdentifier>{a255799a-76da-4a68-a7b5-4ae783746e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Helpers">
+      <UniqueIdentifier>{6b2115b6-0ca1-4991-ad3c-a32e77690ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Profiler">
+      <UniqueIdentifier>{61939670-e923-447a-b00c-efd14c5ec119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Delegate">
+      <UniqueIdentifier>{193c1a68-9c0e-4bee-a578-9bf07f541613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Templates">
+      <UniqueIdentifier>{7917d6d1-098c-44f1-8f6a-642a87ec6f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Reflection">
+      <UniqueIdentifier>{f53c8e74-0468-4bd1-b5ab-424ec1e1060f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\Mathematic">
+      <UniqueIdentifier>{afe79963-d16d-4646-a571-b0aaf3cecd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Public\GenericPlatform">
+      <UniqueIdentifier>{3209390c-620d-47b7-aedc-27b340576ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public">
+      <UniqueIdentifier>{86ead91f-462a-4688-bb60-5f520e08f78e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\Light">
+      <UniqueIdentifier>{12474827-b2b2-47d9-83c8-b1e7056efb1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\Camera">
+      <UniqueIdentifier>{988d66ab-ec56-4096-ac4b-53b50047b062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\Camera\CameraTypes">
+      <UniqueIdentifier>{e7b989e4-a8c2-42d4-b768-d69d1c5df8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\Components">
+      <UniqueIdentifier>{5f1f86bc-eb0c-4a5a-bddb-515abfc0234d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\EngineTypes">
+      <UniqueIdentifier>{41979ab8-7a2c-4214-96ef-0feaeeb4259d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\GameFramework">
+      <UniqueIdentifier>{e4905163-bb35-4d20-a856-277a1e03245c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Public\PhysicsEngine">
+      <UniqueIdentifier>{77f32497-b1c4-490b-a7c5-a19579c3e482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Public">
+      <UniqueIdentifier>{4dbd0af2-d6d9-4cff-b1e4-e425bce67f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool\Public">
+      <UniqueIdentifier>{0e8abfed-9a1f-4318-a5f7-713f45a4fbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreObject\Public">
+      <UniqueIdentifier>{3fd664e0-bc10-4040-8450-6363667d9d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreObject\Public\Object">
+      <UniqueIdentifier>{f70db151-d12e-43f4-b603-a8c6c73ad1a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Public">
+      <UniqueIdentifier>{f4d90358-1b15-44ba-8e0a-a0f7f169356d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Public\GLFW">
+      <UniqueIdentifier>{aca3a49e-5578-4b64-ba63-91fa542a328c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Public\GLFW\Window">
+      <UniqueIdentifier>{86e23565-a5f8-4396-a6b0-dd796685fce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager\Public">
+      <UniqueIdentifier>{ea2b37a6-5eef-431d-9484-1675c6ea0ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager\Public\Builder">
+      <UniqueIdentifier>{7c8a29d7-bfe3-4f48-8a47-a74d67f3e60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Public\Environment">
+      <UniqueIdentifier>{0e04b21d-cb31-4944-aabf-37c2b8ec8ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Public\Utility">
+      <UniqueIdentifier>{138e3305-359f-4841-a878-b9863de64700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{660e3931-5303-4470-8dec-6f3f1afb4716}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PCH\PCH.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RHI.cpp">
+      <Filter>RHI\Private\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Model\Model.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Model\Vertex.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Shader\Shader.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Texture\Texture.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Material\Material.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Material\MaterialInstance.cpp">
+      <Filter>RHI\Private\Vulkan\Asset\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\DeviceAllocator.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\CommandBuffer.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\CommandPool.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\Device.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\Fence.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\Instance.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\PipelineCache.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\Queue.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Object\Swapchain.cpp">
+      <Filter>RHI\Private\Vulkan\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Debug.cpp">
+      <Filter>RHI\Private\Vulkan\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Function.cpp">
+      <Filter>RHI\Private\Vulkan\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Loader.cpp">
+      <Filter>RHI\Private\Vulkan\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\BloomPass.cpp">
+      <Filter>RHI\Private\Vulkan\RenderPasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\LightingPass.cpp">
+      <Filter>RHI\Private\Vulkan\RenderPasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\TonemappingPass.cpp">
+      <Filter>RHI\Private\Vulkan\RenderPasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\RenderPass.cpp">
+      <Filter>RHI\Private\Vulkan\RenderPasses</Filter>
+    </ClCompile>
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\ShadowPass.cpp">
+      <Filter>RHI\Private\Vulkan\RenderPasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\CoreMinimal.cpp">
+      <Filter>Core\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Log\Log.cpp">
+      <Filter>Core\Private\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Delegate\Delegate.cpp">
+      <Filter>Core\Private\Delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Delegate\DelegateBase.cpp">
+      <Filter>Core\Private\Delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Delegate\MultiCastDelegate.cpp">
+      <Filter>Core\Private\Delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Delegate\SingleCastDelegate.cpp">
+      <Filter>Core\Private\Delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Profiler\Profiler.cpp">
+      <Filter>Core\Private\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Bounds.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Transform.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Color.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Color32.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Matrix4x4.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Quaternion.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Utility.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector2.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector3.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector4.cpp">
+      <Filter>Core\Private\Mathematic</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameUserSettings.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameWorldSettings.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\ObjectFactory.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\ObjectManager.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Level.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\World.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Engine.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\EngineModuleManager.cpp">
+      <Filter>Engine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Light\DirectionalLightComponent.cpp">
+      <Filter>Engine\Private\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Light\LightComponent.cpp">
+      <Filter>Engine\Private\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Light\PointLightComponent.cpp">
+      <Filter>Engine\Private\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Light\SpotLightComponent.cpp">
+      <Filter>Engine\Private\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Camera\CameraComponent.cpp">
+      <Filter>Engine\Private\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Camera\CameraTypes\CameraViewInfo.cpp">
+      <Filter>Engine\Private\Camera\CameraTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\EntityComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\PrimitiveComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\SceneComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\StaticMeshComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\BoxComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\CapsuleComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\Components\SphereComponent.cpp">
+      <Filter>Engine\Private\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\EngineTypes\AttachementTransformRules.cpp">
+      <Filter>Engine\Private\EngineTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\EngineTypes\DetachmentTransformRules.cpp">
+      <Filter>Engine\Private\EngineTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionData.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionFilterData.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionFlags.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionObjectQueryParams.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionQueryParams.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionResponseContainer.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionResponseParams.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionShape.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\HitResult.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\OverlapInfo.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsQueryFilterCallback.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsQueryFilterCallbackSweep.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsSceneHandle.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXTypeConverter.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyInstance.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionFilterData.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\InitBodyHelper.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicalMaterial.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsActorHandle.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsEngine.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsInterface.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsMaterialHandle.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsShapeHandle.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsSimulationFilterShader.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXAllocatorCallback.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXErrorCallbak.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXSimulationEventCallback.cpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameFramework\DirectionalLight.cpp">
+      <Filter>Engine\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameFramework\Entity.cpp">
+      <Filter>Engine\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameFramework\PointLight.cpp">
+      <Filter>Engine\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\GameFramework\SpotLight.cpp">
+      <Filter>Engine\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Private\Renderer.cpp">
+      <Filter>Renderer\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool\Private\ThreadPool.cpp">
+      <Filter>ThreadPool\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreObject\Private\Object.cpp">
+      <Filter>CoreObject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Private\GLFW\Application.cpp">
+      <Filter>Application\Private\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Private\GLFW\Window\Window.cpp">
+      <Filter>Application\Private\GLFW\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager\Private\AssetManager.cpp">
+      <Filter>AssetManager\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager\Private\Builder\ModelBuilder.cpp">
+      <Filter>AssetManager\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager\Private\Builder\ShaderBuilder.cpp">
+      <Filter>AssetManager\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager\Private\Builder\TextureBuilder.cpp">
+      <Filter>AssetManager\Private\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Environment\Floor.cpp">
+      <Filter>Game\Private\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Environment\Roof.cpp">
+      <Filter>Game\Private\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Environment\Wall.cpp">
+      <Filter>Game\Private\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\PlayerScripts\FindFloorResult.cpp">
+      <Filter>Game\Private\PlayerScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\PlayerScripts\Player.cpp">
+      <Filter>Game\Private\PlayerScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\PlayerScripts\PlayerMovementComponent.cpp">
+      <Filter>Game\Private\PlayerScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Public\PlayerScripts\PlayerController.cpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Utility\DebugCamera.cpp">
+      <Filter>Game\Private\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Environment\MovingPlatform.cpp">
+      <Filter>Game\Private\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Environment\Crate.cpp">
+      <Filter>Game\Private\Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCH\PCH.hpp">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\RHI.hpp">
+      <Filter>RHI\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\RHIAsset.hpp">
+      <Filter>RHI\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RHI.hpp">
+      <Filter>RHI\Public\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Vulkan.hpp">
+      <Filter>RHI\Public\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Model\Model.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Model\Vertex.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Shader\Shader.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Texture\Texture.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Material\Material.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Material\MaterialInstance.hpp">
+      <Filter>RHI\Public\Vulkan\Asset\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\DeviceAllocator.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\CommandBuffer.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\CommandPool.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\Device.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\Fence.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\Instance.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\PipelineCache.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\Queue.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Object\Swapchain.hpp">
+      <Filter>RHI\Public\Vulkan\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Debug.hpp">
+      <Filter>RHI\Public\Vulkan\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Function.hpp">
+      <Filter>RHI\Public\Vulkan\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Loader.hpp">
+      <Filter>RHI\Public\Vulkan\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\BloomPass.hpp">
+      <Filter>RHI\Public\Vulkan\RenderPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\LightingPass.hpp">
+      <Filter>RHI\Public\Vulkan\RenderPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\TonemappingPass.hpp">
+      <Filter>RHI\Public\Vulkan\RenderPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\RenderPass.hpp">
+      <Filter>RHI\Public\Vulkan\RenderPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\ShadowPass.hpp">
+      <Filter>RHI\Public\Vulkan\RenderPasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\CoreMinimal.hpp">
+      <Filter>Core\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Log\Log.hpp">
+      <Filter>Core\Public\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Log\LogCategory.hpp">
+      <Filter>Core\Public\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Log\LogLevel.hpp">
+      <Filter>Core\Public\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\HAL\Platform.hpp">
+      <Filter>Core\Public\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Windows\WindowsPlatform.hpp">
+      <Filter>Core\Public\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Helpers\NonCopyable.hpp">
+      <Filter>Core\Public\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Helpers\UniqueObject.hpp">
+      <Filter>Core\Public\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Profiler\Profiler.hpp">
+      <Filter>Core\Public\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Profiler\ProfilerData.hpp">
+      <Filter>Core\Public\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Profiler\ProfilerMarker.hpp">
+      <Filter>Core\Public\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Delegate\Delegate.hpp">
+      <Filter>Core\Public\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Delegate\DelegateBase.hpp">
+      <Filter>Core\Public\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Delegate\MultiCastDelegate.hpp">
+      <Filter>Core\Public\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Delegate\SingleCastDelegate.hpp">
+      <Filter>Core\Public\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Templates\GuardValue.hpp">
+      <Filter>Core\Public\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Templates\Templates.hpp">
+      <Filter>Core\Public\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaEnum.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaHelper.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaHolder.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaMember.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaSerialize.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaString.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\MetaSystem.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Reflection\Reflection.hpp">
+      <Filter>Core\Public\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Bounds.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Color.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Color32.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Math.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\MathMacro.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Matrix4x4.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\NumericLimits.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Plane.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Quaternion.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Transform.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Utility.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Vector2.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Vector3.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\Mathematic\Vector4.hpp">
+      <Filter>Core\Public\Mathematic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Public\GenericPlatform\GenericPlatform.hpp">
+      <Filter>Core\Public\GenericPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Private\PhysicsEngine\PhysicsEnums.hpp">
+      <Filter>Engine\Private\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Engine.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineKey.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineModule.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineModuleManager.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameUserSettings.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameWorldSettings.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\ObjectFactory.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\ObjectManager.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Level.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\World.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineTypes.hpp">
+      <Filter>Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Light\DirectionalLightComponent.hpp">
+      <Filter>Engine\Public\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Light\LightComponent.hpp">
+      <Filter>Engine\Public\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Light\PointLightComponent.hpp">
+      <Filter>Engine\Public\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Light\SpotLightComponent.hpp">
+      <Filter>Engine\Public\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Camera\CameraComponent.hpp">
+      <Filter>Engine\Public\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Camera\CameraType.hpp">
+      <Filter>Engine\Public\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Camera\CameraTypes\CameraTypeEnums.hpp">
+      <Filter>Engine\Public\Camera\CameraTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Camera\CameraTypes\CameraViewInfo.hpp">
+      <Filter>Engine\Public\Camera\CameraTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\BoxComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\CapsuleComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\EntityComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\PrimitiveComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\SceneComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\SphereComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\Components\StaticMeshComponent.hpp">
+      <Filter>Engine\Public\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineTypes\EngineTypeEnums.hpp">
+      <Filter>Engine\Public\EngineTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineTypes\AttachmentTransformRules.hpp">
+      <Filter>Engine\Public\EngineTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineTypes\DetachmentTransformRules.hpp">
+      <Filter>Engine\Public\EngineTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameFramework\DirectionalLight.hpp">
+      <Filter>Engine\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameFramework\Entity.hpp">
+      <Filter>Engine\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameFramework\PointLight.hpp">
+      <Filter>Engine\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\GameFramework\SpotLight.hpp">
+      <Filter>Engine\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionData.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionFilterData.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionFlags.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyInstance.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionFilterData.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionObjectQueryParams.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionQueryParams.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionResponseContainer.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionResponseParams.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionShape.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\HitResult.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\InitBodyHelper.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\OverlapInfo.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\OverlapResult.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicalMaterial.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsActorCreationParameters.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsActorHandle.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsEngine.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsEnums.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsFiltering.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsInterface.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsMaterialHandle.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsQueryFilterCallback.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsQueryFilterCallbackSweep.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSceneHandle.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSettings.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsShapeHandle.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSimulationFilterShader.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXAllocatorCallback.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXErrorCallback.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXSimulationEventCallback.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXTypeConverter.hpp">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\RenderContainer.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\Renderer.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\RenderList.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\RenderScene.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\RenderTarget.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Public\RenderView.hpp">
+      <Filter>Renderer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\Public\ThreadPool.hpp">
+      <Filter>ThreadPool\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreObject\Public\CoreObject.hpp">
+      <Filter>CoreObject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreObject\Public\Object\Object.hpp">
+      <Filter>CoreObject\Public\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Public\Application.hpp">
+      <Filter>Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Public\GLFW\Application.hpp">
+      <Filter>Application\Public\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Public\GLFW\Window\InputEnum.hpp">
+      <Filter>Application\Public\GLFW\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Public\GLFW\Window\Window.hpp">
+      <Filter>Application\Public\GLFW\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager\Public\Asset.hpp">
+      <Filter>AssetManager\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager\Public\AssetManager.hpp">
+      <Filter>AssetManager\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager\Public\Builder\ModelBuilder.hpp">
+      <Filter>AssetManager\Public\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager\Public\Builder\ShaderBuilder.hpp">
+      <Filter>AssetManager\Public\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager\Public\Builder\TextureBuilder.hpp">
+      <Filter>AssetManager\Public\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\PlayerScripts\FindFloorResult.hpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\PlayerScripts\Player.hpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\PlayerScripts\PlayerController.hpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\PlayerScripts\PlayerMovementComponent.hpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\PlayerScripts\StepDownResult.hpp">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Environment\Floor.hpp">
+      <Filter>Game\Public\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Environment\Roof.hpp">
+      <Filter>Game\Public\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Environment\Wall.hpp">
+      <Filter>Game\Public\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Utility\CollisionChannelMacro.hpp">
+      <Filter>Game\Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Utility\DebugCamera.hpp">
+      <Filter>Game\Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Environment\MovingPlatform.hpp">
+      <Filter>Game\Public\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\Environment\Crate.hpp">
+      <Filter>Game\Public\Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Public\Log\Log.inl">
+      <Filter>Core\Public\Log</Filter>
+    </None>
+    <None Include="Core\Public\Log\LogCategory.inl">
+      <Filter>Core\Public\Log</Filter>
+    </None>
+    <None Include="Core\Public\Profiler\Profiler.inl">
+      <Filter>Core\Public\Profiler</Filter>
+    </None>
+    <None Include="Core\Public\Profiler\ProfilerData.inl">
+      <Filter>Core\Public\Profiler</Filter>
+    </None>
+    <None Include="Core\Public\Profiler\ProfilerMarker.inl">
+      <Filter>Core\Public\Profiler</Filter>
+    </None>
+    <None Include="Core\Public\Reflection\MetaHelper.inl">
+      <Filter>Core\Public\Reflection</Filter>
+    </None>
+    <None Include="Core\Public\Reflection\MetaMember.inl">
+      <Filter>Core\Public\Reflection</Filter>
+    </None>
+    <None Include="Core\Public\Reflection\MetaSerialize.inl">
+      <Filter>Core\Public\Reflection</Filter>
+    </None>
+    <None Include="Core\Public\Reflection\MetaString.inl">
+      <Filter>Core\Public\Reflection</Filter>
+    </None>
+    <None Include="Core\Public\Reflection\MetaSystem.inl">
+      <Filter>Core\Public\Reflection</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Bounds.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Color.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Color32.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Matrix4x4.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Plane.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Quaternion.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Transform.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Utility.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Vector2.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Vector3.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Core\Public\Mathematic\Vector4.inl">
+      <Filter>Core\Public\Mathematic</Filter>
+    </None>
+    <None Include="Engine\Public\EngineModuleManager.inl">
+      <Filter>Engine\Public</Filter>
+    </None>
+    <None Include="Engine\Public\Level.inl">
+      <Filter>Engine\Public</Filter>
+    </None>
+    <None Include="Engine\Public\World.inl">
+      <Filter>Engine\Public</Filter>
+    </None>
+    <None Include="Engine\Public\Camera\CameraComponent.inl">
+      <Filter>Engine\Public\Camera</Filter>
+    </None>
+    <None Include="Engine\Public\Camera\CameraTypes\CameraViewInfo.inl">
+      <Filter>Engine\Public\Camera\CameraTypes</Filter>
+    </None>
+    <None Include="Engine\Public\Components\BoxComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\Components\CapsuleComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\Components\EntityComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\Components\PrimitiveComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\Components\SceneComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\Components\SphereComponent.inl">
+      <Filter>Engine\Public\Components</Filter>
+    </None>
+    <None Include="Engine\Public\EngineTypes\EngineTypeEnums.inl">
+      <Filter>Engine\Public\EngineTypes</Filter>
+    </None>
+    <None Include="Engine\Public\GameFramework\Entity.inl">
+      <Filter>Engine\Public\GameFramework</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\BodyInstance.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\CollisionResponseContainer.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\CollisionShape.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicalMaterial.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicsActorHandle.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicsInterface.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicsMaterialHandle.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicsSceneHandle.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysicsShapeHandle.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="Engine\Public\PhysicsEngine\PhysXTypeConverter.inl">
+      <Filter>Engine\Public\PhysicsEngine</Filter>
+    </None>
+    <None Include="ThreadPool\Public\ThreadPool.inl">
+      <Filter>ThreadPool\Public</Filter>
+    </None>
+    <None Include="CoreObject\Public\Object\Object.inl">
+      <Filter>CoreObject\Public\Object</Filter>
+    </None>
+    <None Include="Application\Public\GLFW\Window\Window.inl">
+      <Filter>Application\Public\GLFW\Window</Filter>
+    </None>
+    <None Include="AssetManager\Public\AssetManager.inl">
+      <Filter>AssetManager\Public</Filter>
+    </None>
+    <None Include="Game\Public\PlayerScripts\Player.inl">
+      <Filter>Game\Public\PlayerScripts</Filter>
+    </None>
+    <None Include="Shaders\bloom.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\brightcolor.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\composition.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\fullscreen.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gbuffer.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gbuffer.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gui.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\gui.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadow.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadow.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadowomni.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadowomni.geom.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shadowomni.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\tonemapping.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\transparent.frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\transparent.vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="HeaderCruncher.config" />
+    <None Include="HeaderCruncher.data" />
+  </ItemGroup>
+</Project>

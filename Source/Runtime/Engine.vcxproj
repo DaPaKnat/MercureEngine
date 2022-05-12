@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Public\Application.hpp" />
+    <ClInclude Include="Application\Public\GLFW\Application.hpp" />
+    <ClInclude Include="Application\Public\GLFW\Window\InputEnum.hpp" />
+    <ClInclude Include="Application\Public\GLFW\Window\Window.hpp" />
+    <ClInclude Include="AssetManager\Public\Asset.hpp" />
+    <ClInclude Include="AssetManager\Public\AssetManager.hpp" />
+    <ClInclude Include="AssetManager\Public\Builder\ModelBuilder.hpp" />
+    <ClInclude Include="AssetManager\Public\Builder\ShaderBuilder.hpp" />
+    <ClInclude Include="AssetManager\Public\Builder\TextureBuilder.hpp" />
+    <ClInclude Include="CoreObject\Public\CoreObject.hpp" />
+    <ClInclude Include="CoreObject\Public\Object\Object.hpp" />
+    <ClInclude Include="Core\Public\CoreMinimal.hpp" />
+    <ClInclude Include="Core\Public\Delegate\Delegate.hpp" />
+    <ClInclude Include="Core\Public\Delegate\DelegateBase.hpp" />
+    <ClInclude Include="Core\Public\Delegate\MultiCastDelegate.hpp" />
+    <ClInclude Include="Core\Public\Delegate\SingleCastDelegate.hpp" />
+    <ClInclude Include="Core\Public\GenericPlatform\GenericPlatform.hpp" />
+    <ClInclude Include="Core\Public\HAL\Platform.hpp" />
+    <ClInclude Include="Core\Public\Helpers\NonCopyable.hpp" />
+    <ClInclude Include="Core\Public\Helpers\UniqueObject.hpp" />
+    <ClInclude Include="Core\Public\Log\Log.hpp" />
+    <ClInclude Include="Core\Public\Log\LogCategory.hpp" />
+    <ClInclude Include="Core\Public\Log\LogLevel.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Bounds.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Color.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Color32.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Math.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\MathMacro.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Matrix4x4.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\NumericLimits.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Plane.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Quaternion.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Transform.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Utility.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Vector2.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Vector3.hpp" />
+    <ClInclude Include="Core\Public\Mathematic\Vector4.hpp" />
+    <ClInclude Include="Core\Public\Profiler\Profiler.hpp" />
+    <ClInclude Include="Core\Public\Profiler\ProfilerData.hpp" />
+    <ClInclude Include="Core\Public\Profiler\ProfilerMarker.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaEnum.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaHelper.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaHolder.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaMember.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaSerialize.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaString.hpp" />
+    <ClInclude Include="Core\Public\Reflection\MetaSystem.hpp" />
+    <ClInclude Include="Core\Public\Reflection\Reflection.hpp" />
+    <ClInclude Include="Core\Public\Templates\GuardValue.hpp" />
+    <ClInclude Include="Core\Public\Templates\Templates.hpp" />
+    <ClInclude Include="Core\Public\Windows\WindowsPlatform.hpp" />
+    <ClInclude Include="Engine\Private\PhysicsEngine\PhysicsEnums.hpp" />
+    <ClInclude Include="Engine\Public\Camera\CameraComponent.hpp" />
+    <ClInclude Include="Engine\Public\Camera\CameraType.hpp" />
+    <ClInclude Include="Engine\Public\Camera\CameraTypes\CameraTypeEnums.hpp" />
+    <ClInclude Include="Engine\Public\Camera\CameraTypes\CameraViewInfo.hpp" />
+    <ClInclude Include="Engine\Public\Components\BoxComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\CapsuleComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\EntityComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\PrimitiveComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\SceneComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\SphereComponent.hpp" />
+    <ClInclude Include="Engine\Public\Components\StaticMeshComponent.hpp" />
+    <ClInclude Include="Engine\Public\Engine.hpp" />
+    <ClInclude Include="Engine\Public\EngineKey.hpp" />
+    <ClInclude Include="Engine\Public\EngineModule.hpp" />
+    <ClInclude Include="Engine\Public\EngineModuleManager.hpp" />
+    <ClInclude Include="Engine\Public\EngineTypes\EngineTypeEnums.hpp" />
+    <ClInclude Include="Engine\Public\GameFramework\DirectionalLight.hpp" />
+    <ClInclude Include="Engine\Public\GameFramework\Entity.hpp" />
+    <ClInclude Include="Engine\Public\GameFramework\PointLight.hpp" />
+    <ClInclude Include="Engine\Public\GameFramework\SpotLight.hpp" />
+    <ClInclude Include="Engine\Public\GameUserSettings.hpp" />
+    <ClInclude Include="Engine\Public\GameWorldSettings.hpp" />
+    <ClInclude Include="Engine\Public\Light\DirectionalLightComponent.hpp" />
+    <ClInclude Include="Engine\Public\Light\LightComponent.hpp" />
+    <ClInclude Include="Engine\Public\Light\PointLightComponent.hpp" />
+    <ClInclude Include="Engine\Public\Light\SpotLightComponent.hpp" />
+    <ClInclude Include="Engine\Public\ObjectFactory.hpp" />
+    <ClInclude Include="Engine\Public\ObjectManager.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionData.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionFilterData.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyCollisionFlags.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\BodyInstance.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionFilterData.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionObjectQueryParams.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionQueryParams.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionResponseContainer.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionResponseParams.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\CollisionShape.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\HitResult.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\InitBodyHelper.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\OverlapInfo.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\OverlapResult.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicalMaterial.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsActorCreationParameters.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsActorHandle.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsEngine.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsEnums.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsFiltering.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsInterface.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsMaterialHandle.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsQueryFilterCallback.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsQueryFilterCallbackSweep.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSceneHandle.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSettings.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsShapeHandle.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysicsSimulationFilterShader.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXAllocatorCallback.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXErrorCallback.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXSimulationEventCallback.hpp" />
+    <ClInclude Include="Engine\Public\PhysicsEngine\PhysXTypeConverter.hpp" />
+    <ClInclude Include="Engine\Public\Level.hpp" />
+    <ClInclude Include="Engine\Public\World.hpp" />
+    <ClInclude Include="Game\Public\Environment\Crate.hpp" />
+    <ClInclude Include="Game\Public\Environment\Floor.hpp" />
+    <ClInclude Include="Game\Public\Environment\MovingPlatform.hpp" />
+    <ClInclude Include="Game\Public\Environment\Roof.hpp" />
+    <ClInclude Include="Game\Public\Environment\Wall.hpp" />
+    <ClInclude Include="Game\Public\PlayerScripts\FindFloorResult.hpp" />
+    <ClInclude Include="Game\Public\PlayerScripts\Player.hpp" />
+    <ClInclude Include="Game\Public\PlayerScripts\PlayerController.hpp" />
+    <ClInclude Include="Game\Public\PlayerScripts\PlayerMovementComponent.hpp" />
+    <ClInclude Include="Game\Public\PlayerScripts\StepDownResult.hpp" />
+    <ClInclude Include="Game\Public\Utility\CollisionChannelMacro.hpp" />
+    <ClInclude Include="Game\Public\Utility\DebugCamera.hpp" />
+    <ClInclude Include="PCH\PCH.hpp" />
+    <ClInclude Include="Renderer\Public\RenderContainer.hpp" />
+    <ClInclude Include="Renderer\Public\Renderer.hpp" />
+    <ClInclude Include="Engine\Public\EngineTypes\AttachmentTransformRules.hpp" />
+    <ClInclude Include="Engine\Public\EngineTypes\DetachmentTransformRules.hpp" />
+    <ClInclude Include="Engine\Public\EngineTypes.hpp" />
+    <ClInclude Include="Renderer\Public\RenderList.hpp" />
+    <ClInclude Include="Renderer\Public\RenderScene.hpp" />
+    <ClInclude Include="Renderer\Public\RenderTarget.hpp" />
+    <ClInclude Include="Renderer\Public\RenderView.hpp" />
+    <ClCompile Include="AssetManager\Private\Builder\ModelBuilder.cpp" />
+    <ClCompile Include="AssetManager\Private\Builder\ShaderBuilder.cpp" />
+    <ClCompile Include="AssetManager\Private\Builder\TextureBuilder.cpp" />
+    <ClCompile Include="CoreObject\Private\Object.cpp" />
+    <ClCompile Include="Engine\Private\Components\EntityComponent.cpp" />
+    <ClCompile Include="Engine\Private\Components\PrimitiveComponent.cpp" />
+    <ClCompile Include="Engine\Private\Components\SceneComponent.cpp" />
+    <ClCompile Include="Engine\Private\GameFramework\DirectionalLight.cpp" />
+    <ClCompile Include="Engine\Private\GameFramework\Entity.cpp" />
+    <ClCompile Include="Engine\Private\Components\StaticMeshComponent.cpp" />
+    <ClCompile Include="Engine\Private\GameFramework\PointLight.cpp" />
+    <ClCompile Include="Engine\Private\GameFramework\SpotLight.cpp" />
+    <ClCompile Include="Engine\Private\GameUserSettings.cpp" />
+    <ClCompile Include="Engine\Private\GameWorldSettings.cpp" />
+    <ClCompile Include="Engine\Private\Light\DirectionalLightComponent.cpp" />
+    <ClCompile Include="Engine\Private\Light\LightComponent.cpp" />
+    <ClCompile Include="Engine\Private\Light\PointLightComponent.cpp" />
+    <ClCompile Include="Engine\Private\Light\SpotLightComponent.cpp" />
+    <ClCompile Include="Engine\Private\ObjectFactory.cpp" />
+    <ClCompile Include="Engine\Private\ObjectManager.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionData.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionFilterData.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyCollisionFlags.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionObjectQueryParams.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionQueryParams.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionResponseContainer.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionResponseParams.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionShape.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\HitResult.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\OverlapInfo.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsQueryFilterCallback.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsQueryFilterCallbackSweep.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsSceneHandle.cpp" />
+    <ClCompile Include="Engine\Private\Level.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXTypeConverter.cpp" />
+    <ClCompile Include="Engine\Private\World.cpp" />
+    <ClCompile Include="Game\Private\Environment\Crate.cpp" />
+    <ClCompile Include="Game\Private\Environment\Floor.cpp" />
+    <ClCompile Include="Game\Private\Environment\MovingPlatform.cpp" />
+    <ClCompile Include="Game\Private\Environment\Roof.cpp" />
+    <ClCompile Include="Game\Private\Environment\Wall.cpp" />
+    <ClCompile Include="Game\Private\PlayerScripts\FindFloorResult.cpp" />
+    <ClCompile Include="Game\Private\PlayerScripts\Player.cpp" />
+    <ClCompile Include="Game\Private\PlayerScripts\PlayerMovementComponent.cpp" />
+    <ClCompile Include="Game\Private\Utility\DebugCamera.cpp" />
+    <ClCompile Include="Game\Public\PlayerScripts\PlayerController.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Material\Material.cpp" />
+    <ClInclude Include="RHI\Public\RHI.hpp" />
+    <ClInclude Include="RHI\Public\RHIAsset.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Material\Material.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Material\MaterialInstance.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Model\Model.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Model\Vertex.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Shader\Shader.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Asset\Texture\Texture.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\DeviceAllocator.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\CommandBuffer.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\CommandPool.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\Device.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\Fence.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\Instance.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\PipelineCache.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\Queue.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Object\Swapchain.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\BloomPass.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\LightingPass.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\TonemappingPass.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\RenderPass.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RenderPasses\ShadowPass.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\RHI.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Debug.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Function.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Utilities\Loader.hpp" />
+    <ClInclude Include="RHI\Public\Vulkan\Vulkan.hpp" />
+    <ClInclude Include="ThreadPool\Public\ThreadPool.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Private\GLFW\Application.cpp" />
+    <ClCompile Include="Application\Private\GLFW\Window\Window.cpp" />
+    <ClCompile Include="AssetManager\Private\AssetManager.cpp" />
+    <ClCompile Include="Core\Private\CoreMinimal.cpp" />
+    <ClCompile Include="Core\Private\Delegate\Delegate.cpp" />
+    <ClCompile Include="Core\Private\Delegate\DelegateBase.cpp" />
+    <ClCompile Include="Core\Private\Delegate\MultiCastDelegate.cpp" />
+    <ClCompile Include="Core\Private\Delegate\SingleCastDelegate.cpp" />
+    <ClCompile Include="Core\Private\Log\Log.cpp" />
+    <ClCompile Include="Core\Private\Mathematic\Bounds.cpp" />
+    <ClCompile Include="Core\Private\Mathematic\Transform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Profiler\Profiler.cpp" />
+    <ClCompile Include="Engine\Private\Camera\CameraComponent.cpp" />
+    <ClCompile Include="Engine\Private\Camera\CameraTypes\CameraViewInfo.cpp" />
+    <ClCompile Include="Engine\Private\Components\BoxComponent.cpp" />
+    <ClCompile Include="Engine\Private\Components\CapsuleComponent.cpp" />
+    <ClCompile Include="Engine\Private\Components\SphereComponent.cpp" />
+    <ClCompile Include="Engine\Private\Engine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Engine\Private\EngineModuleManager.cpp" />
+    <ClCompile Include="Engine\Private\EngineTypes\AttachementTransformRules.cpp" />
+    <ClCompile Include="Engine\Private\EngineTypes\DetachmentTransformRules.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\BodyInstance.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\CollisionFilterData.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\InitBodyHelper.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicalMaterial.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsActorHandle.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsEngine.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsInterface.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsMaterialHandle.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsShapeHandle.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysicsSimulationFilterShader.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXAllocatorCallback.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXErrorCallbak.cpp" />
+    <ClCompile Include="Engine\Private\PhysicsEngine\PhysXSimulationEventCallback.cpp" />
+    <ClCompile Include="PCH\PCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Color.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Color32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Matrix4x4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Quaternion.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Utility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Private\Mathematic\Vector4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Renderer\Private\Renderer.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Material\MaterialInstance.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Model\Model.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Model\Vertex.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Shader\Shader.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Asset\Texture\Texture.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\DeviceAllocator.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\CommandBuffer.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\CommandPool.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\Device.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\Fence.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\Instance.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\PipelineCache.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\Queue.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Object\Swapchain.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\BloomPass.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\LightingPass.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\TonemappingPass.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\RenderPass.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RenderPasses\ShadowPass.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\RHI.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Debug.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Function.cpp" />
+    <ClCompile Include="RHI\Private\Vulkan\Utilities\Loader.cpp" />
+    <ClCompile Include="ThreadPool\Private\ThreadPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Application\Public\GLFW\Window\Window.inl" />
+    <None Include="AssetManager\Public\AssetManager.inl" />
+    <None Include="CoreObject\Public\Object\Object.inl" />
+    <None Include="Core\Public\Log\Log.inl" />
+    <None Include="Core\Public\Log\LogCategory.inl" />
+    <None Include="Core\Public\Mathematic\Bounds.inl" />
+    <None Include="Core\Public\Mathematic\Color.inl" />
+    <None Include="Core\Public\Mathematic\Color32.inl" />
+    <None Include="Core\Public\Mathematic\Matrix4x4.inl" />
+    <None Include="Core\Public\Mathematic\Plane.inl" />
+    <None Include="Core\Public\Mathematic\Quaternion.inl" />
+    <None Include="Core\Public\Mathematic\Transform.inl" />
+    <None Include="Core\Public\Mathematic\Utility.inl" />
+    <None Include="Core\Public\Mathematic\Vector2.inl" />
+    <None Include="Core\Public\Mathematic\Vector3.inl" />
+    <None Include="Core\Public\Mathematic\Vector4.inl" />
+    <None Include="Core\Public\Profiler\Profiler.inl" />
+    <None Include="Core\Public\Profiler\ProfilerData.inl" />
+    <None Include="Core\Public\Profiler\ProfilerMarker.inl" />
+    <None Include="Core\Public\Reflection\MetaHelper.inl" />
+    <None Include="Core\Public\Reflection\MetaMember.inl" />
+    <None Include="Core\Public\Reflection\MetaSerialize.inl" />
+    <None Include="Core\Public\Reflection\MetaString.inl" />
+    <None Include="Core\Public\Reflection\MetaSystem.inl" />
+    <None Include="Engine\Public\Camera\CameraComponent.inl" />
+    <None Include="Engine\Public\Camera\CameraTypes\CameraViewInfo.inl" />
+    <None Include="Engine\Public\Components\BoxComponent.inl" />
+    <None Include="Engine\Public\Components\CapsuleComponent.inl" />
+    <None Include="Engine\Public\Components\EntityComponent.inl" />
+    <None Include="Engine\Public\Components\PrimitiveComponent.inl" />
+    <None Include="Engine\Public\Components\SceneComponent.inl" />
+    <None Include="Engine\Public\Components\SphereComponent.inl" />
+    <None Include="Engine\Public\EngineModuleManager.inl" />
+    <None Include="Engine\Public\EngineTypes\EngineTypeEnums.inl" />
+    <None Include="Engine\Public\GameFramework\Entity.inl" />
+    <None Include="Engine\Public\PhysicsEngine\BodyInstance.inl" />
+    <None Include="Engine\Public\PhysicsEngine\CollisionResponseContainer.inl" />
+    <None Include="Engine\Public\PhysicsEngine\CollisionShape.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicalMaterial.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicsActorHandle.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicsInterface.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicsMaterialHandle.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicsSceneHandle.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysicsShapeHandle.inl" />
+    <None Include="Engine\Public\PhysicsEngine\PhysXTypeConverter.inl" />
+    <None Include="Engine\Public\Level.inl" />
+    <None Include="Engine\Public\World.inl" />
+    <None Include="Game\Public\PlayerScripts\Player.inl" />
+    <None Include="HeaderCruncher.config" />
+    <None Include="HeaderCruncher.data" />
+    <None Include="Shaders\bloom.frag.glsl" />
+    <None Include="Shaders\brightcolor.frag.glsl" />
+    <None Include="Shaders\composition.frag.glsl" />
+    <None Include="Shaders\fullscreen.vert.glsl" />
+    <None Include="Shaders\gbuffer.frag.glsl" />
+    <None Include="Shaders\gbuffer.vert.glsl" />
+    <None Include="Shaders\gui.frag.glsl" />
+    <None Include="Shaders\gui.vert.glsl" />
+    <None Include="Shaders\shadow.geom.glsl" />
+    <None Include="Shaders\shadow.vert.glsl" />
+    <None Include="Shaders\shadowomni.frag.glsl" />
+    <None Include="Shaders\shadowomni.geom.glsl" />
+    <None Include="Shaders\shadowomni.vert.glsl" />
+    <None Include="Shaders\tonemapping.frag.glsl" />
+    <None Include="Shaders\transparent.frag.glsl" />
+    <None Include="Shaders\transparent.vert.glsl" />
+    <None Include="ThreadPool\Public\ThreadPool.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{14A9AA06-0BFA-404D-A8D8-59B3AF6DCA9F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\</IntDir>
+    <TargetName>CrunchEngine</TargetName>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>Clean</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\</IntDir>
+    <TargetName>CrunchEngine</TargetName>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>Clean</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\</IntDir>
+    <TargetName>CrunchEngine</TargetName>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>Clean</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\</IntDir>
+    <TargetName>CrunchEngine</TargetName>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>Clean</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ENGINE_EXPORT;EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Runtime\PCH;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Game\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\ThirdParty\FBX\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\GLFW\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);$(SolutionDir)Source\ThirdParty\Shaderc\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\PhysX-3.4\Lib\$(Platform)\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;vulkan-1.lib;libfbxsdk-mt.lib;imgui-docking.lib;shaderc_combined.lib;PhysX3$(Configuration)_$(Platform).lib;PhysX3Common$(Configuration)_$(Platform).lib;PhysX3Cooking$(Configuration)_$(Platform).lib;PhysX3Extensions$(Configuration)_$(Platform).lib;PxFoundation$(Configuration)_$(Platform).lib;VkLayer_api_dump.lib;VkLayer_core_validation.lib;VkLayer_device_simulation.lib;VkLayer_monitor.lib;VkLayer_object_tracker.lib;VkLayer_parameter_validation.lib;VkLayer_screenshot.lib;VkLayer_threading.lib;VkLayer_unique_objects.lib;VkLayer_utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>vulkan-1.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Engine, type=win32, version=1.0.0.0</AssemblyIdentity>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(TargetDir)$(TargetName).dll"    xcopy "$(TargetDir)$(TargetName).dll"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).lib"    xcopy "$(TargetDir)$(TargetName).lib"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).pdb" xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" xcopy "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\" /Y /R /C /S /E /I
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" xcopy "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller\" /Y /R /C /S /E /I
+
+IF NOT EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" mkdir $(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data" /s /q
+
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" /s /q
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" /s /q</Command>
+      <Outputs>$(SolutionDir)FAKE.md;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)Source\ThirdParty\HeaderCruncher\HeaderCruncher.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ENGINE_EXPORT;EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Runtime\PCH;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Game\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\ThirdParty\FBX\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\GLFW\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);$(SolutionDir)Source\ThirdParty\Shaderc\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\PhysX-3.4\Lib\$(Platform)\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;vulkan-1.lib;libfbxsdk-mt.lib;imgui-docking.lib;shaderc_combined.lib;PhysX3$(Configuration)_$(Platform).lib;PhysX3Common$(Configuration)_$(Platform).lib;PhysX3Cooking$(Configuration)_$(Platform).lib;PhysX3Extensions$(Configuration)_$(Platform).lib;PxFoundation$(Configuration)_$(Platform).lib;VkLayer_api_dump.lib;VkLayer_core_validation.lib;VkLayer_device_simulation.lib;VkLayer_monitor.lib;VkLayer_object_tracker.lib;VkLayer_parameter_validation.lib;VkLayer_screenshot.lib;VkLayer_threading.lib;VkLayer_unique_objects.lib;VkLayer_utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>vulkan-1.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Engine, type=win32, version=1.0.0.0</AssemblyIdentity>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(TargetDir)$(TargetName).dll"    xcopy "$(TargetDir)$(TargetName).dll"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).lib"    xcopy "$(TargetDir)$(TargetName).lib"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).pdb" xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" xcopy "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\" /Y /R /C /S /E /I
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" xcopy "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller\" /Y /R /C /S /E /I
+
+IF NOT EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" mkdir $(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data" /s /q
+
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" /s /q
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" /s /q</Command>
+      <Outputs>$(SolutionDir)FAKE.md;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)Source\ThirdParty\HeaderCruncher\HeaderCruncher.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ENGINE_EXPORT;EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Runtime\PCH;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Game\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\ThirdParty\FBX\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\GLFW\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);$(SolutionDir)Source\ThirdParty\Shaderc\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\PhysX-3.4\Lib\$(Platform)\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;vulkan-1.lib;libfbxsdk-mt.lib;imgui-docking.lib;shaderc_combined.lib;PhysX3$(Configuration)_$(Platform).lib;PhysX3Common$(Configuration)_$(Platform).lib;PhysX3Cooking$(Configuration)_$(Platform).lib;PhysX3Extensions$(Configuration)_$(Platform).lib;PxFoundation$(Configuration)_$(Platform).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>vulkan-1.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Engine, type=win32, version=1.0.0.0</AssemblyIdentity>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(TargetDir)$(TargetName).dll"    xcopy "$(TargetDir)$(TargetName).dll"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).lib"    xcopy "$(TargetDir)$(TargetName).lib"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).pdb" xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" xcopy "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\" /Y /R /C /S /E /I
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" xcopy "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller\" /Y /R /C /S /E /I
+
+IF NOT EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" mkdir $(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data" /s /q
+
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" /s /q
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" /s /q</Command>
+      <Outputs>$(SolutionDir)FAKE.md;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)Source\ThirdParty\HeaderCruncher\HeaderCruncher.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ENGINE_EXPORT;EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Runtime\PCH;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Game\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Engine\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\ThirdParty\FBX\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\GLFW\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);$(SolutionDir)Source\ThirdParty\Shaderc\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\PhysX-3.4\Lib\$(Platform)\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;vulkan-1.lib;libfbxsdk-mt.lib;imgui-docking.lib;shaderc_combined.lib;PhysX3$(Configuration)_$(Platform).lib;PhysX3Common$(Configuration)_$(Platform).lib;PhysX3Cooking$(Configuration)_$(Platform).lib;PhysX3Extensions$(Configuration)_$(Platform).lib;PxFoundation$(Configuration)_$(Platform).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>vulkan-1.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Engine, type=win32, version=1.0.0.0</AssemblyIdentity>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(TargetDir)$(TargetName).dll"    xcopy "$(TargetDir)$(TargetName).dll"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).lib"    xcopy "$(TargetDir)$(TargetName).lib"   "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+IF EXIST "$(TargetDir)$(TargetName).pdb" xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data\" /Y /R /C
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" xcopy "$(SolutionDir)Source\ThirdParty\PhysX-3.4\Bin\$(Platform)\VS2015\$(Configuration)" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\" /Y /R /C /S /E /I
+
+IF EXIST "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" xcopy "$(SolutionDir)Source\ThirdParty\Vulkan\VulkanRuntimeInstaller" "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller\" /Y /R /C /S /E /I
+
+IF NOT EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" mkdir $(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Data" /s /q
+
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\VulkanRuntimeInstaller" /s /q
+IF EXIST "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs"                                  rd "$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\Logs" /s /q</Command>
+      <Outputs>$(SolutionDir)FAKE.md;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)Source\ThirdParty\HeaderCruncher\HeaderCruncher.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

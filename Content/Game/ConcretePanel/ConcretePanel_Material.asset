@@ -1,0 +1,17 @@
+MATERIAL
+{
+    "AO": 1.0,
+    "AOMap": "Game/ConcretePanel/ConcretePanel_AO",
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "AlbedoMap": "Game/ConcretePanel/ConcretePanel_Albedo",
+    "Metallic": 0.30000001192092896,
+    "MetallicMap": "Default/Textures/default",
+    "NormalMap": "Game/ConcretePanel/ConcretePanel_Normal",
+    "Roughness": 1.0,
+    "RoughnessMap": "Game/ConcretePanel/ConcretePanel_Roughness"
+}

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{71ED59E2-2CF9-4A41-9AA9-4CF5EF251F0A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Editor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\</IntDir>
+    <TargetName>$(SolutionName)</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\</IntDir>
+    <TargetName>$(SolutionName)</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\</IntDir>
+    <TargetName>$(SolutionName)</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)_$(Platform)\Editor\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\</IntDir>
+    <TargetName>$(SolutionName)</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Editor\PCH;$(SolutionDir)Source\Editor\Public\Editor;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(TargetDir)Data;$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CrunchEngine.lib;vulkan-1.lib;imgui-docking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>name='Data' type='win32' version='1.0.0.0';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Manifest>
+      <AssemblyIdentity>Mercure, type="win32", version="1.0.0.0"</AssemblyIdentity>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)Config\Data.manifest" xcopy "$(SolutionDir)Config\Data.manifest" "$(TargetDir)Data\" /Y /R /C</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Editor\PCH;$(SolutionDir)Source\Editor\Public\Editor;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(TargetDir)Data;$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CrunchEngine.lib;vulkan-1.lib;imgui-docking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>name='Data' type='win32' version='1.0.0.0';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Manifest>
+      <AssemblyIdentity>Mercure, type="win32", version="1.0.0.0"</AssemblyIdentity>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)Config\Data.manifest" xcopy "$(SolutionDir)Config\Data.manifest" "$(TargetDir)Data\" /Y /R /C</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Editor\PCH;$(SolutionDir)Source\Editor\Public\Editor;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(TargetDir)Data;$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CrunchEngine.lib;vulkan-1.lib;imgui-docking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>name='Data' type='win32' version='1.0.0.0';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Manifest>
+      <AssemblyIdentity>Mercure, type="win32", version="1.0.0.0"</AssemblyIdentity>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <OutputManifestFile>
+      </OutputManifestFile>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+    </ManifestResourceCompile>
+    <PreBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)Config\Data.manifest" xcopy "$(SolutionDir)Config\Data.manifest" "$(TargetDir)Data\" /Y /R /C</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>EDITOR;VULKAN;GLFW;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Intermediate\Generated;$(SolutionDir)Source\Editor\PCH;$(SolutionDir)Source\Editor\Public\Editor;$(SolutionDir)Source\Runtime\Application\Public;$(SolutionDir)Source\Runtime\AssetManager\Public;$(SolutionDir)Source\Runtime\Core\Public;$(SolutionDir)Source\Runtime\CoreObject\Public;$(SolutionDir)Source\Runtime\Engine\Public;$(SolutionDir)Source\Runtime\Renderer\Public;$(SolutionDir)Source\Runtime\RHI\Public;$(SolutionDir)Source\Runtime\ThreadPool\Public;$(SolutionDir)Source\ThirdParty\FBX\Include;$(SolutionDir)Source\ThirdParty\GLFW\Include;$(SolutionDir)Source\ThirdParty\GLTF\Include;$(SolutionDir)Source\ThirdParty\ImGUI\Include;$(SolutionDir)Source\ThirdParty\JSON\Include;$(SolutionDir)Source\ThirdParty\OBJ\Include;$(SolutionDir)Source\ThirdParty\Shaderc\Include;$(SolutionDir)Source\ThirdParty\VMA\Include;$(SolutionDir)Source\ThirdParty\Vulkan\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PhysX_3.4\Include;$(SolutionDir)Source\ThirdParty\PhysX-3.4\PxShared\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)Binaries\$(Configuration)_$(Platform)\Editor\PreCompiledHeaders\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableModules>false</EnableModules>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(TargetDir)Data;$(SolutionDir)Source\ThirdParty\ImGUI\Lib\$(Configuration)_$(Platform);$(SolutionDir)Source\ThirdParty\Vulkan\Lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CrunchEngine.lib;vulkan-1.lib;imgui-docking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>name='Data' type='win32' version='1.0.0.0';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+      <UACUIAccess>false</UACUIAccess>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Manifest>
+      <AssemblyIdentity>Mercure, type="win32", version="1.0.0.0"</AssemblyIdentity>
+      <InputResourceManifests>
+      </InputResourceManifests>
+      <OutputManifestFile>
+      </OutputManifestFile>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+    </ManifestResourceCompile>
+    <PreBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)Config\Data.manifest" xcopy "$(SolutionDir)Config\Data.manifest" "$(TargetDir)Data\" /Y /R /C</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Private\Editor\Camera\EditorCamera.cpp" />
+    <ClCompile Include="Private\Editor\Editor.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PCH\PCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\EditorWindow.cpp" />
+    <ClCompile Include="Private\Editor\Explorer\EditorExplorer.cpp" />
+    <ClCompile Include="Private\Editor\Game\EditorGame.cpp" />
+    <ClCompile Include="Private\Editor\Game\ImGuizmo.cpp" />
+    <ClCompile Include="Private\Editor\Hierarchy\EditorHierarchy.cpp" />
+    <ClCompile Include="Private\Editor\Inspector\EditorInspector.cpp" />
+    <ClCompile Include="Private\Editor\Log\EditorLog.cpp" />
+    <ClCompile Include="Private\Editor\Menu\EditorMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Public\Editor\Editor.hpp" />
+    <ClInclude Include="PCH\PCH.hpp" />
+    <ClInclude Include="Public\Editor\Camera\EditorCamera.hpp" />
+    <ClInclude Include="Public\Editor\EditorWindow.hpp" />
+    <ClInclude Include="Public\Editor\Explorer\EditorExplorer.hpp" />
+    <ClInclude Include="Public\Editor\Game\EditorGame.hpp" />
+    <ClInclude Include="Public\Editor\Game\ImGuizmo.hpp" />
+    <ClInclude Include="Public\Editor\Hierarchy\EditorHierarchy.hpp" />
+    <ClInclude Include="Public\Editor\Inspector\EditorInspector.hpp" />
+    <ClInclude Include="Public\Editor\Log\EditorLog.hpp" />
+    <ClInclude Include="Public\Editor\Menu\EditorMenu.hpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Public\Editor\Camera\EditorCamera.inl" />
+    <None Include="Public\Editor\EditorWindow.inl" />
+    <None Include="Public\Editor\Explorer\EditorExplorer.inl" />
+    <None Include="Public\Editor\Hierarchy\EditorHierarchy.inl" />
+    <None Include="Public\Editor\Inspector\EditorInspector.inl" />
+    <None Include="Public\Editor\Log\EditorLog.inl" />
+    <None Include="Public\Editor\Menu\EditorMenu.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

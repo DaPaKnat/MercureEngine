@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Public\Editor">
+      <UniqueIdentifier>{ca5bb958-bff5-44be-9846-4182f4536859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{ba58f335-d5af-42c5-bd37-3cfa83d3b2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Camera">
+      <UniqueIdentifier>{a073c6c9-98bb-4ec7-aee8-d3dc72481a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Explorer">
+      <UniqueIdentifier>{cd292ca6-8092-4a3a-a676-b9a0f996b341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Hierarchy">
+      <UniqueIdentifier>{fdc14a15-5561-4e76-9631-2b988d5b1223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Inspector">
+      <UniqueIdentifier>{da1943a8-2390-4e0f-9f2a-7f951d6943f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Log">
+      <UniqueIdentifier>{46fd6f2c-7b9d-463a-a338-34764cb8cfa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Menu">
+      <UniqueIdentifier>{628034c0-d311-4f5b-b51b-13b208274d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Editor\Game">
+      <UniqueIdentifier>{9abfba35-68f3-4a86-88c9-4145b6867a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{d40ba973-4880-4057-893d-ec1c20312305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor">
+      <UniqueIdentifier>{59b4d822-b59b-48de-bfe6-6ca62ec5f55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{07d692f6-ca1e-45dc-83db-94a8d7105f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Camera">
+      <UniqueIdentifier>{e61c8ed8-bb78-4059-a3c4-1579a9bc3248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Explorer">
+      <UniqueIdentifier>{e74b5eac-52b3-48f9-8751-bece3ce1f629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Game">
+      <UniqueIdentifier>{7e94602b-d5a5-4861-bab0-9b5af3b666b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Hierarchy">
+      <UniqueIdentifier>{0f6c92eb-41a1-488a-b1a1-8ce7e0c4a154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Inspector">
+      <UniqueIdentifier>{abe3a25d-641a-46b0-a417-0c0128ee2f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Log">
+      <UniqueIdentifier>{419b58db-203d-452f-90fe-4636780772ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Editor\Menu">
+      <UniqueIdentifier>{14e4b69a-d800-4563-b8fc-017eb9ceda31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Public\Editor\Editor.hpp">
+      <Filter>Public\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\EditorWindow.hpp">
+      <Filter>Public\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Camera\EditorCamera.hpp">
+      <Filter>Public\Editor\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Explorer\EditorExplorer.hpp">
+      <Filter>Public\Editor\Explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Hierarchy\EditorHierarchy.hpp">
+      <Filter>Public\Editor\Hierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Inspector\EditorInspector.hpp">
+      <Filter>Public\Editor\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Log\EditorLog.hpp">
+      <Filter>Public\Editor\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Menu\EditorMenu.hpp">
+      <Filter>Public\Editor\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Game\EditorGame.hpp">
+      <Filter>Public\Editor\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PCH\PCH.hpp">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Editor\Game\ImGuizmo.hpp">
+      <Filter>Public\Editor\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Public\Editor\EditorWindow.inl">
+      <Filter>Public\Editor</Filter>
+    </None>
+    <None Include="Public\Editor\Camera\EditorCamera.inl">
+      <Filter>Public\Editor\Camera</Filter>
+    </None>
+    <None Include="Public\Editor\Explorer\EditorExplorer.inl">
+      <Filter>Public\Editor\Explorer</Filter>
+    </None>
+    <None Include="Public\Editor\Hierarchy\EditorHierarchy.inl">
+      <Filter>Public\Editor\Hierarchy</Filter>
+    </None>
+    <None Include="Public\Editor\Inspector\EditorInspector.inl">
+      <Filter>Public\Editor\Inspector</Filter>
+    </None>
+    <None Include="Public\Editor\Log\EditorLog.inl">
+      <Filter>Public\Editor\Log</Filter>
+    </None>
+    <None Include="Public\Editor\Menu\EditorMenu.inl">
+      <Filter>Public\Editor\Menu</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Private\Editor\Editor.cpp">
+      <Filter>Private\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\EditorWindow.cpp">
+      <Filter>Private\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Camera\EditorCamera.cpp">
+      <Filter>Private\Editor\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Explorer\EditorExplorer.cpp">
+      <Filter>Private\Editor\Explorer</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Game\EditorGame.cpp">
+      <Filter>Private\Editor\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Hierarchy\EditorHierarchy.cpp">
+      <Filter>Private\Editor\Hierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Inspector\EditorInspector.cpp">
+      <Filter>Private\Editor\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Log\EditorLog.cpp">
+      <Filter>Private\Editor\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Menu\EditorMenu.cpp">
+      <Filter>Private\Editor\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="PCH\PCH.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Editor\Game\ImGuizmo.cpp">
+      <Filter>Private\Editor\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

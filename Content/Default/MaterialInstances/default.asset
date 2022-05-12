@@ -1,0 +1,13 @@
+MATERIAL_INSTANCE
+{
+    "AO": 1.0,
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "Material": "Default/Materials/default",
+    "Metallic": 1.0,
+    "Roughness": 1.0
+}

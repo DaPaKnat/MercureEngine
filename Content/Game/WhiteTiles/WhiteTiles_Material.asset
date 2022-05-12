@@ -1,0 +1,17 @@
+MATERIAL
+{
+    "AO": 1.0,
+    "AOMap": "Game/WhiteTiles/WhiteTiles_AO",
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "AlbedoMap": "Game/WhiteTiles/WhiteTiles_Albedo",
+    "Metallic": 0.699999988079071,
+    "MetallicMap": "Default/Textures/default",
+    "NormalMap": "Game/WhiteTiles/WhiteTiles_Normal",
+    "Roughness": 1.0,
+    "RoughnessMap": "Game/WhiteTiles/WhiteTiles_Roughness"
+}

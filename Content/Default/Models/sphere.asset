@@ -1,0 +1,14 @@
+MODEL
+{
+    "Count": 1,
+    "Counts": [
+        559,
+        2880
+    ],
+    "Data": "Default/Models/sphere.bin",
+    "Offsets": [
+        0,
+        24596
+    ],
+    "Size": 36116
+}

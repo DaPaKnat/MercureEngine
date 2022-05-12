@@ -1,0 +1,17 @@
+MATERIAL
+{
+    "AO": 1.0,
+    "AOMap": "Game/Crate/Crate_AO",
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "AlbedoMap": "Game/Crate/Crate_Albedo",
+    "Metallic": 1.0,
+    "MetallicMap": "Game/Crate/Crate_Metallic",
+    "NormalMap": "Game/Crate/Crate_Normal",
+    "Roughness": 1.0,
+    "RoughnessMap": "Game/Crate/Crate_Roughness"
+}

@@ -1,0 +1,17 @@
+MATERIAL
+{
+    "AO": 0.0,
+    "AOMap": "Default/Textures/default",
+    "Albedo": {
+        "m_a": 1.0,
+        "m_b": 1.0,
+        "m_g": 1.0,
+        "m_r": 1.0
+    },
+    "AlbedoMap": "Default/Textures/default",
+    "Metallic": 0.0,
+    "MetallicMap": "Default/Textures/default",
+    "NormalMap": "Default/Textures/default",
+    "Roughness": 0.0,
+    "RoughnessMap": "Default/Textures/default"
+}

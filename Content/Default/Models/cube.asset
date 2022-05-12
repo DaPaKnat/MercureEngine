@@ -1,0 +1,14 @@
+MODEL
+{
+    "Count": 1,
+    "Counts": [
+        24,
+        36
+    ],
+    "Data": "Default/Models/cube.bin",
+    "Offsets": [
+        0,
+        1056
+    ],
+    "Size": 1200
+}

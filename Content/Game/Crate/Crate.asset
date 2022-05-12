@@ -1,0 +1,14 @@
+MODEL
+{
+    "Count": 1,
+    "Counts": [
+        1059,
+        1788
+    ],
+    "Data": "Game/Crate/Crate.bin",
+    "Offsets": [
+        0,
+        46596
+    ],
+    "Size": 53748
+}
